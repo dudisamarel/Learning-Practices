@@ -1,6 +1,6 @@
 import argparse
 from file_searcher import find_files
-from fibonacci import fibonacciPrint
+from fibonacci import fibonacci
 
 
 parser = argparse.ArgumentParser()
@@ -9,9 +9,9 @@ pattern = parser.parse_args().file_name
 
 
 def main():
-    # print(fibonacciPrint(20))
-    files = find_files(pattern, r"C:\Users\dudi samarel\Desktop\files")
-    print(files)
+    fibonacci(10)
+    # files = find_files(pattern, r"C:\Users\dudi samarel\Desktop\files")
+    # print(files)
 
 
 if __name__ == "__main__":
